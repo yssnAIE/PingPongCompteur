@@ -1,4 +1,5 @@
 module com.example.pingpong {
+
     requires javafx.controls;
     requires javafx.fxml;
 

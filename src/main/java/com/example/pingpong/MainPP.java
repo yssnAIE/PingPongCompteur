@@ -2,6 +2,7 @@ package com.example.pingpong;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -13,7 +14,7 @@ public class MainPP extends Stage {
 
     public MainPP() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainPP.class.getResource("ping-pong.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene((Parent) fxmlLoader.load(), 600, 400);
         this.setTitle("Ping Pong!");
         this.setScene(scene);
         controller = fxmlLoader.getController();

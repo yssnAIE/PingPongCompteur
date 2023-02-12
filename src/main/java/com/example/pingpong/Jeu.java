@@ -13,8 +13,11 @@ public class Jeu extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         System.out.println("Starting...");
-
         getNames();
+    }
+
+    public static void main(String[] args) {
+        launch();
     }
 
     public void startGame(String name1, String name2) throws IOException {

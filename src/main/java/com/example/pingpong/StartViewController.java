@@ -22,7 +22,6 @@ public class StartViewController {
 
     @FXML
     void BtnClicked(ActionEvent event) throws IOException {
-        System.out.println("Button clicked!");
         String pseudo1 = LabelPseudo1.getText();
         String pseudo2 = LabelPseudo2.getText();
         jeu.startGame(pseudo1, pseudo2);
