@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #75A3EA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pingpong.StartViewController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="58.0" prefWidth="499.0" style="-fx-background-color: #5A6BD7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;">
+               <children>
+                  <Label prefHeight="63.0" prefWidth="167.0" text="Joueur n°1:" textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="LabelPseudo1" prefHeight="58.0" prefWidth="151.0" promptText="Pseudo 1">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="550.0" style="-fx-background-color: #5A6BD7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;">
+               <children>
+                  <Label prefHeight="63.0" prefWidth="167.0" text="Joueur n°2:" textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="LabelPseudo2" prefHeight="58.0" prefWidth="151.0" promptText="Pseudo 2">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label alignment="CENTER" prefHeight="70.0" prefWidth="612.0" text="Entrez le nom des joueurs" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BtnCommencez" mnemonicParsing="false" onAction="#BtnClicked" prefHeight="82.0" prefWidth="242.0" style="-fx-background-color: #90C6ED; -fx-background-radius: 20;" text="Commencez" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
